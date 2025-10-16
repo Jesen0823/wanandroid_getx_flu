@@ -11,12 +11,11 @@ class InfoCell extends StatelessWidget {
   final ValueChanged<ArticleInfoDatas> _cellTapCallback;
 
   const InfoCell(
-      {Key? key,
+      {super.key,
       required ArticleInfoDatas model,
       required ValueChanged<ArticleInfoDatas> callback})
       : _model = model,
-        _cellTapCallback = callback,
-        super(key: key);
+        _cellTapCallback = callback;
 
   @override
   Widget build(BuildContext context) {
